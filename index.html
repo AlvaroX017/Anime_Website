@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Título do site relacionado à animes</title>
+
+  <!-- Fonte -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"> 
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Scripts -->
+  <script
+			  src="https://code.jquery.com/jquery-3.5.1.min.js"
+			  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+			  crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+ 
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/91513a6fff.js" crossorigin="anonymous"></script>
+
+  <!-- Progress Bar -->
+  <script src="js/progressbar.min.js"></script>
+ 
+  <!-- Parallax -->
+  <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+
+
+</head>
+<body>
+  <header>
+    <div class="container" id="nav-container">
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <a class="navbar-brand" href="index.html">
+          <img id="logo" src="img/logo.gif" alt="LOGO DO SITE"></a>
+
+        <!-- Menu responsivo -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" id="home-menu" href="#">Home</span></a>
+            <a class="nav-item nav-link" id="ptags-menu" href="#">Tags</a>
+            <a class="nav-item nav-link" id="team-menu" href="#">Time</a>
+            <a class="nav-item nav-link" id="portfolio-menu" href="#">Projetos</a>
+            <a class="nav-item nav-link" id="contact-menu" href="#">Contato</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container-fluid">
+
+      <!-- Slider -->
+      <div id="mainSlider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/banner1.gif" class="d-block w-100" alt="Projetos de e-commerce">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Quer assistir os melhores animes grátis?</h5>
+                    <p>Você está no lugar certo.</p>
+                    <a href="#" class="main-btn">Assistir</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/banner2.gif" class="d-block w-100" alt="Engenharia de Software">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Está sem mais opções de animes?</h5>
+                    <p>Nos contamos com 10000+ animes em nosso site.</p>
+                    <a href="#" class="main-btn">Ver mais</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/banner3.gif" class="d-block w-100" alt="Manutenção em Software">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Está querendo ver um episódio na mesma hora do lançamento?</h2>
+                    <p>Traduzimos os animes e lançamos no nosso site no mesmo dia.</p>
+                    <a href="#" class="main-btn">Pesquisar</a>
+                </div>
+            </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mainSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+    </div>
+
+      <!-- Principais Tags -->
+      <div id="ptags-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+                <h3 class="main-title">Principais Tags</h3>
+            </div>
+            <div class="col-md-4 ptags-box">
+              <i class="fas fa-child"></i>
+              <h4>Shounen</h4>
+              <p>My Hero Academia, Dragon Ball Z, Slam Dunk – todos animes incríveis, apesar de serem longos, são todos animes shonen.</p>
+            </div>
+            <div class="col-md-4 ptags-box">
+              <i class="fab fa-gitlab"></i>
+              <h4>Shoujo</h4>
+              <p>Sailor Moon, Sakura Cardcaptor, Fruits Basket e Nana podem variar em termos de história, mas todas essas séries são do gênero shoujo.</p>
+            </div>
+            <div class="col-md-4 ptags-box">
+              <i class="fas fa-pizza-slice"></i>
+              <h4>Seinen</h4>
+              <p>Se você não gosta de personagens românticos, heróis adolescentes dando golpes com nomes barulhentos e procura por uma opção mais séria, bem-vindo ao mundo do anime Seinen.</p>
+            </div>
+            <div class="col-md-4 ptags-box">
+              <i class="fas fa-brain"></i>
+              <h4>Iyashikei</h4>
+              <p>É um gênero quefaz o telespectador revigorar as forças e a vontade de viver. É como tomar um banho quente quando chegamos de um dia cansativo de trabalho, estudos e filhos.</p>
+            </div>
+            <div class="col-md-4 ptags-box">
+              <i class="fas fa-globe"></i>
+              <h4>Isekai</h4>
+              <p>O anime Isekai leva esse conceito para outro nível, construindo um gênero inteiramente em torno de pessoas comuns sendo levadas para mundos fantásticos.</p>
+            </div>
+            <div class="col-md-4 ptags-box">
+              <i class="fas fa-network-wired"></i>
+              <h4>Mecha</h4>
+              <p>A premissa de anime mecha é simples e geralmente gira em torno de pilotos impetuosos em enormes robôs, lutando pelo que é certo.</p>
+            </div>
+            <button class="main-btn" id="tags-btn">Ver mais tags</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Time -->
+      <div id="team-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="main-title">Nosso time</h3>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <img src="img/profile1.gif" class="card-img-top" alt="Imagem de Perfil 1">
+                <div class="card-body">
+                  <h5 class="card-title">Name</h5>
+                  <p class="card-text">Tradutor/Revisor/Desenvolvedor</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <img src="img/profile2.gif" class="card-img-top" alt="Imagem de Perfil 2">
+                <div class="card-body">
+                  <h5 class="card-title">Name</h5>
+                  <p class="card-text">SEO/Tradutora</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <img src="img/profile3.gif" class="card-img-top" alt="Imagem de Perfil 3">
+                <div class="card-body">
+                  <h5 class="card-title">Name</h5>
+                  <p class="card-text">Desenvolvedor/SEO/Revisor</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <img src="img/profile4.gif" class="card-img-top" alt="Imagem de Perfil 4">
+                <div class="card-body">
+                  <h5 class="card-title">Name</h5>
+                  <p class="card-text">UX/UI Designer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Trabalhe conosco -->
+      <div id="apply-area">
+        <div class="container-fluid">
+          <div class="row">
+              <div class="col-md-12 apply-box" id="pattern-img">
+              <h4>Gostaria de trabalhar com Animes?</h4>
+              <p id="t-1">Estamos contratando editores, tradutores e pessoas para revisar.</p>
+              <p id="t-2">Também contratamos animadores e roteiristas para desenvolvimento.</p>
+              <p id="t-3">Tem interesse? Clique no botão abaixo veja nossas vagas.</p>
+              <a href="#" class="main-btn" id="apply-btn">Saiba Mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfólio -->
+      <div id="portfolio-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="main-title">Conheça nossos projetos</h3>
+            </div>
+            <div class="col-md-12" id="filter-btn-box">
+              <button class="main-btn filter-btn active" id="all-btn">Todos</button>
+              <button class="main-btn filter-btn" id="dev-btn">Desenvolvimento</button>
+              <button class="main-btn filter-btn" id="tra-btn">Tradução</button>
+              <button class="main-btn filter-btn" id="rev-btn">Revisão</button>
+            </div>
+            <div class="col-md-4 project-box dev">
+              <img src="img/proj1.gif" class="img-fluid" alt="Projeto 1">
+            </div>
+            <div class="col-md-4 project-box tra">
+              <img src="img/proj2.gif" class="img-fluid" alt="Projeto 2">
+            </div>
+            <div class="col-md-4 project-box rev">
+              <img src="img/proj3.gif" class="img-fluid" alt="Projeto 3">
+            </div>
+            <div class="col-md-4 project-box dev">
+              <img src="img/proj4.gif" class="img-fluid" alt="Projeto 4">
+            </div>
+            <div class="col-md-4 project-box tra">
+              <img src="img/proj5.gif" class="img-fluid" alt="Projeto 5">
+            </div>
+            <div class="col-md-4 project-box rev">
+              <img src="img/proj6.gif" class="img-fluid" alt="Projeto 6">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Inscrição de email -->
+      <div id="news-area">
+        <div class="container">
+          <div class="col-md-12">
+            <h3 class="main-title">Fique por dentro das novidades</h3>
+          </div>
+          <p>Assine nossa lista de e-mails, e receba as atualizações de animes.</p>
+          <form action="">
+            <input type="text" class="form-control" id="email-input" name="email" placeholder="Seu principal e-mail">
+            <input type="submit" id="news-btn" value="Inscrever">
+          </form>
+        </div>
+      </div>
+
+      <!-- Área de doação -->
+      <div id="doar-area">
+        <div class="container">
+            <div class="row">
+              <p>Deseja fazer uma doação para ajudar a manter o site?</p>
+              <button class="main-btn" id="doar-btn">Doar</button>
+            </div>
+          </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <div id="contact-area">
+      <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="main-title">Entre em contato conosco</h3>
+            </div>
+            <div class="col-md-4 contact-box">
+              <i class="fas fa-phone"></i>
+              <p><span class="contact-tile">Telefone:</span> (88)99897969594</p>
+              <p><span class="contact-tile">Horários:</span> 01:00AM - 12:00PM</p>
+            </div>
+            <div class="col-md-4 contact-box">
+              <i class="fas fa-envelope"></i>
+              <p><span class="contact-tile">Envie um email:</span> contato123@gmail.com</p>
+            </div>
+            <div class="col-md-4 contact-box">
+              <i class="fas fa-map-marker-alt"></i>
+              <p><span class="contact-tile">Local:</span> Brasil/CE</p>
+            </div>
+            <div class="col-md-6" id="msg-box">
+              <p>Deixe seu feedback ou deixe sua sujestão de anime:</p>
+            </div>
+            <div class="col-md-6" id="contact-form">
+              <form action="">
+                <input type="text" class="form-control" placeholder="Nome" name="name">
+                <input type="text" class="form-control" placeholder="Assunto" name="subject">
+                <textarea class="form-control" rows="3" placeholder="Sua mensagem..." name="message"></textarea>
+                <button class="main-btn">Enviar</button>
+              </form>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div id="copy-area">
+      <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+              <p>Desenvolvido por <a href="https://siteinexistente.com.ce" target="_blank">Álvaro</a> &copy; 2517</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Scripts do projeto -->
+  <script src="js/scripts.js"></script>
+</body>
+</html>
